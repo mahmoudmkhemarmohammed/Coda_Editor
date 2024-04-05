@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="style/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <ul>
+                <li class="active" data-filter=".brightness">Brightness</li>
+                <li data-filter=".contrast">Contrast</li>
+                <li data-filter=".saturate">Saturate</li>
+                <li data-filter=".sepia">Sepia</li>
+                <li data-filter=".grayscal">Grayscal</li>
+                <li data-filter=".blur">blur</li>
+                <li data-filter=".hue-rotat">Hue-rotat</li>
+            </ul>
+            <div class="brightness active">
+                <label for="brightness">brightness</label>
+                <input type="range" name="filter" id="brightness" min="0" max="200" value="100">
+            </div>
+            <div class="contrast">
+                <label for="contrast">contrast</label>
+                <input type="range" name="filter" id="contrast" min="0" max="200" value="100">
+            </div>
+            <div class="saturate">
+                <label for="saturate">saturate</label>
+                <input type="range" name="filter" id="saturate" min="0" max="200" value="100">
+            </div>
+            <div class="sepia">
+                <label for="sepia">sepia</label>
+                <input type="range" name="filter" id="sepia" min="0" max="200" value="0">
+            </div>
+            <div class="blur">
+                <label for="blur">blur</label>
+                <input type="range" name="filter" id="blur" step="0.1" min="0" max="10" value="0">
+            </div>
+            <div class="grayscal">
+                <label for="grayscal">grayscal</label>
+                <input type="range" name="filter" id="grayscal" step="0.1" min="0" max="1" value="0">
+            </div>
+            <div class="hue-rotat">
+                <label for="hue-rotat">hue-rotat</label>
+                <input type="range" name="filter" id="hue-rotat" min="0" max="350" value="0">
+            </div>
+            <section class="btn">
+                <button class="reset">Resete</button>
+                <a download="image">Download</a>
+            </section>
+        </div>
+        <div class="imges">
+            <label for="upload" class="upload">Upload</label>
+            <input type="file" name="upload" id="upload" class="upload" placeholder="Upload">
+            <img alt="" class="img">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <!-- Main File Js -->
+    <script src="script/script.js"></script>
+</body>
+</html>
