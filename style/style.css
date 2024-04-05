@@ -132,6 +132,15 @@ a {
         margin: 0 auto;
         border-radius: 10px;
     }
+    .container .inputs {
+        margin: 10px 0;
+    }
+    .container .inputs ul {
+        margin-bottom: 17px;
+    }
+    .container .inputs div {
+        margin-bottom: 0px;
+    }
     .container .inputs , .container .imges {
         width: 100%;
     }
